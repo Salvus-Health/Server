@@ -4,7 +4,7 @@
   "description": "Node.js + Express skeleton application",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./src/app.js",
     "test": "set NODE_ENV=test NODE_CONFIG_DIR=./src/config/ && mocha --timeout 10000 --compilers js:babel-core/register ./src/test/*.js ",
     "populatedb": "babel-node --presets es2015 ./node_modules/pow-mongodb-fixtures/bin/mongofixtures node-express-skeleton-dev ./src/test/fixtures"
   },
