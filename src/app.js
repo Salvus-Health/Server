@@ -22,8 +22,9 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use('/', routes);
 
+const port = process.env.PORT || 9000;
 // const port = process.env.PORT || config.server.port;
-const port = 9000;
+// const port = 9000;
 app.listen(port);
 console.log('Node + Express ' +
     'REST API skeleton server started on port: ' + port);
