@@ -8,6 +8,9 @@ const EmailSchema = new Schema({
         type:String,
         required : true,
         index: {unique:true}
+    },
+    zipcode: {
+        type:Number
     }
 });
 

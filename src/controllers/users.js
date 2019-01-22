@@ -4,7 +4,7 @@ var request = require('../helpers/request');
 var pagination = require('../helpers/pagination');
 
 const User = mongoose.model('User');
-// const Email= mongoose.model('Email');
+const Email= mongoose.model('Email');
 
 
 // Not to be used
