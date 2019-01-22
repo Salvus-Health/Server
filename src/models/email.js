@@ -5,12 +5,12 @@ var mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const EmailSchema = new Schema({
     email:{
-        type:String,
-        required : true,
+        type:String, 
         index: {unique:true}
     },
     zipcode: {
-        type:Number
+        type:Number,
+        required: true,
     }
 });
 
